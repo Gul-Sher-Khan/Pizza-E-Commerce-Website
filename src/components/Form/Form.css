@@ -66,7 +66,7 @@
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input {
+.form-container .input {
   width: 300px;
   margin: 20px;
   border: solid 1.5px #2e2e2e;
@@ -90,14 +90,14 @@
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus,
-input:valid {
+.form-container .input:focus,
+.input:valid {
   outline: none;
   border: 2px solid #ffd902;
 }
 
-.input:focus ~ label,
-input:valid ~ label {
+.form-container .input:focus ~ label,
+.input:valid ~ label {
   transform: translateY(-50%) scale(0.8);
   background-color: #ffffff;
   padding: 0 0.2em;
