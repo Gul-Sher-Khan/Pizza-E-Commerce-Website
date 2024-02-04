@@ -1,0 +1,125 @@
+.form {
+  display: flex;
+}
+
+.vertical-line {
+  height: 58%;
+  width: 2px;
+  background-color: #000000;
+  position: absolute;
+  left: 46%;
+  margin-top: 1%;
+  margin-left: 3px;
+}
+
+.form-heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #000000;
+  width: 400px;
+  position: relative;
+}
+
+.input-group {
+  position: relative;
+  margin: 10px;
+}
+
+.left-form {
+  width: 300px;
+  position: relative;
+  left: -250px;
+}
+
+.right-form {
+  width: 300px;
+  position: relative;
+  left: 0px;
+}
+
+.right-form .input {
+  margin-top: 60px;
+  width: 400px;
+  height: 350px;
+  border: solid 1.5px #2e2e2e;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #000000;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.right-form .user-label {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  color: #000000;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input {
+  width: 300px;
+  margin: 20px;
+  border: solid 1.5px #2e2e2e;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #000000;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  color: #000000;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus,
+input:valid {
+  outline: none;
+  border: 2px solid #ffd902;
+}
+
+.input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #ffffff;
+  padding: 0 0.2em;
+  color: #f8be00;
+}
+
+.submit-button {
+  position: relative;
+  left: 360px;
+  top: 40px;
+  width: 200px;
+  height: 50px;
+  background-color: #f2ce00;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.submit-button:hover {
+  background-color: #f8be00;
+  color: #ffffff;
+}

@@ -1,0 +1,92 @@
+/* Menu.css */
+
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.menu-page h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Menu.css */
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-items > * {
+  flex: calc(33.33% - 20px); /* 3 cards per row, accounting for the gap */
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .menu-items > * {
+    flex: calc(50% - 20px); /* 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-items > * {
+    flex: 100%; /* 1 card per row on even smaller screens */
+  }
+}
+
+/* Your CSS file */
+
+/* Style for the heading */
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the underline */
+.underline-menu {
+  width: 100px;
+  height: 2px;
+  background-color: #ff7700;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Style for the menu buttons */
+.menu-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu-button {
+  padding: 10px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #ff5e00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #d94a02;
+}
+
+.menu-button-active {
+  background-color: #f63803;
+  transform: scale(1.1);
+}

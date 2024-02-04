@@ -1,0 +1,69 @@
+/* MenuCard.css */
+
+.Menucard-container {
+  display: flex;
+  border: 2px solid #f4f4f4;
+  border-radius: 15px;
+  margin: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.Menucard-container:hover {
+  transform: translateY(-5px);
+}
+
+.Menucard-image {
+  flex: 1;
+  position: relative;
+  max-width: 250px;
+  overflow: hidden;
+}
+
+.Menucard-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+
+.Menucard-details {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.Menucard-title {
+  font-size: 2rem;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.Menucard-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.Menucard-price p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.Add-to-Cart-button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.Add-to-Cart-button:hover {
+  background-color: #ff3333;
+}
